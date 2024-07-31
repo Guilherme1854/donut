@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Donut</title>
+</head>
+<body>
+    <h1 class="titulo">Donut</h1>
+    <div class="container">
+    <div id="counter" class="counter">0</div>
+    <button class="button" onclick="incrementCounter()">
+        <img src="https://carrefourbrfood.vtexassets.com/arquivos/ids/68537585/donut-morango-top-und-1.jpg?v=637948061990230000" class="imagem">
+    </button>
+    </div>
+    <script>
+        let count = 0;
+
+function incrementCounter() {
+    count++;
+    document.getElementById('counter').innerText = count;
+}
+    </script>
+    <style>
+        .titulo{
+    color: pink;
+    text-align: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.container{
+    text-align: center;
+}
+.Donut{
+    width: 150px;
+    height: 150px;
+}
+.imagem{
+    width: 150px;
+    height: 150px;
+}
+.button {
+    padding: none;
+    cursor: pointer;
+    color: #fff;
+    background-color: #007bff00;
+    border: none;
+    border-radius: none;
+    margin-top: 50px;
+}
+.counter {
+    font-size: 48px;
+    margin-bottom: 20px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+        </style>
+</body>
+</html>
